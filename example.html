@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <h2>Cody Smith</h2>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+  <p id="demo5"></p>
+  <p id="demo6"></p>
+  <p id="demo7"></p>
+  <p id="demo8"></p>
+  <p id="demo9"></p>
+  <p id="demo10"></p>
+  <p id="demo11"></p>
+  <p id="demo12"></p>
+  <p id="demo13"></p>
+  <p id="demo14"></p>
+  <p id="demo15"></p>
+  <p id="demo16"></p>
+  <p id="demo17"></p>
+  <p id="demo18"></p>
+  <p id="demo19"></p>
+  <p id="demo20"></p>
+
+    <script src="example.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 8px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        const list = document.querySelector('ul');
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
+
+        button.addEventListener('click', () => {
+          const myItem = input.value;
+          input.value = '';
+
+          const listItem = document.createElement('li');
+          const listText = document.createElement('span');
+          const listBtn = document.createElement('button');
+
+          listItem.appendChild(listText);
+          listText.textContent = myItem;
+          listItem.appendChild(listBtn);
+          listBtn.textContent = 'Delete';
+          list.appendChild(listItem);
+
+          listBtn.addEventListener('click', () => {
+            list.removeChild(listItem);
+        });
+
+        input.focus();
+      });
+    </script>
+  </body>
+</html>
