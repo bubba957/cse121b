@@ -6,7 +6,7 @@
 
 var fullName = `Cody Smith`;
 var currentYear = `2023`;
-var profilePicture = `temple.jpg`;
+var profilePicture = `images/temple.jpg`;
 
 /* Step 3 - Element Variables */
 
