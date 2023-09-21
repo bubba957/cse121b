@@ -42,3 +42,7 @@
 // and = (a < 10 && a > 0);
 // document.getElementById("demo9").innerHTML = and;
 // console.log(and);
+
+myArray = [1, 2, 3, 4, 5, 6];
+myArray.length();
+document.getElementById(`demo1`).innerHTML = myArray.length();

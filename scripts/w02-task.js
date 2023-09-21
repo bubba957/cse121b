@@ -4,9 +4,9 @@
 
 /* Step 2 - Variables */
 
-var fullName = `Cody Smith`;
-var currentYear = `2023`;
-var profilePicture = `images/temple.jpg`;
+let fullName = `Cody Smith`;
+let currentYear = `2023`;
+let profilePicture = `images/temple.jpg`;
 
 /* Step 3 - Element Variables */
 
@@ -26,7 +26,7 @@ imageElement.setAttribute(`alt`, `Profile image of ${fullName}`);
 
 foods = [`marshmallows`, `bacon and rice`, `chicken puffs`, `waffles`, `cereal`];
 foodElement.innerHTML = `${foods}`;
-var oneFood = `cupcakes`;
+let oneFood = `cupcakes`;
 foods.push(oneFood);
 foodElement.innerHTML += `<br>${foods}`;
 foods.shift();
