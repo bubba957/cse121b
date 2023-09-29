@@ -55,8 +55,11 @@ document.querySelector(`#divideNumbers`).addEventListener(`click`, divideNumbers
 
 /* Decision Structure */
 
+let currentDate = new Date();
+let currentYear = currentDate.getFullYear();
+document.querySelector(`#year`).innerHTML = currentYear;
 
-
+// document.querySelector('#year').textContent = new Date().getFullYear();
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 
@@ -83,6 +86,18 @@ document.querySelector(`#evens`).innerHTML = filteredEvens;
 
 /* Output Sum of Org. Array */
 
+let reduced = numbersArray.reduce((acc, fn) => acc + fn, 0,);
+
+document.querySelector(`#sumOfArray`).innerHTML = reduced;
+
 /* Output Multiplied by 2 Array */
 
+let mapped = numbersArray.map(array => array * 2);
+
+document.querySelector(`#multiplied`).innerHTML = mapped;
+
 /* Output Sum of Multiplied by 2 Array */
+
+let mappedReduced = mapped.reduce((acc, fn) => acc + fn, 0,);
+
+document.querySelector(`#sumOfMultiplied`).innerHTML = mappedReduced;
