@@ -1,123 +1,164 @@
 
-let a = 5
-let b = 33
-let c = 32
-let d = 13
+// let a = 5
+// let b = 33
+// let c = 32
+// let d = 13
 
-// add = a + b;
-// document.getElementById("demo1").innerHTML = add;
+// // add = a + b;
+// // document.getElementById("demo1").innerHTML = add;
 
-// console.log(add);
+// // console.log(add);
 
-multiply = a * b;
-document.getElementById("demo2").innerHTML = multiply;
+// multiply = a * b;
+// document.getElementById("demo2").innerHTML = multiply;
 
-console.log(multiply);
+// console.log(multiply);
 
-// subtract = a - b;
-// document.getElementById("demo3").innerHTML = subtract;
+// // subtract = a - b;
+// // document.getElementById("demo3").innerHTML = subtract;
 
-// console.log(subtract);
+// // console.log(subtract);
 
-// let greeting = "Hello";
-// let globe = "World";
-// document.getElementById("demo4").innerHTML = message = greeting + " " + globe;
+// // let greeting = "Hello";
+// // let globe = "World";
+// // document.getElementById("demo4").innerHTML = message = greeting + " " + globe;
 
-// console.log(message);
+// // console.log(message);
 
-// a++;
-// a++;
-// a++;
-// document.getElementById("demo5").innerHTML = a;
+// // a++;
+// // a++;
+// // a++;
+// // document.getElementById("demo5").innerHTML = a;
 
-// console.log(a);
+// // console.log(a);
 
-// equals = a == b;
-// document.getElementById("demo6").innerHTML = equals;
+// // equals = a == b;
+// // document.getElementById("demo6").innerHTML = equals;
 
-// console.log(equals);
+// // console.log(equals);
 
-// lessThan = a < b;
-// document.getElementById("demo7").innerHTML = lessThan;
+// // lessThan = a < b;
+// // document.getElementById("demo7").innerHTML = lessThan;
 
-// console.log(lessThan);
+// // console.log(lessThan);
 
-// notEqual = a != b;
-// document.getElementById("demo8").innerHTML = notEqual;
+// // notEqual = a != b;
+// // document.getElementById("demo8").innerHTML = notEqual;
 
-// console.log(notEqual);
+// // console.log(notEqual);
 
-and = (a < 10 && a > 0);
-document.getElementById("demo9").innerHTML = and;
+// and = (a < 10 && a > 0);
+// document.getElementById("demo9").innerHTML = and;
 
-// console.log(and);
+// // console.log(and);
 
-// myArray = [1, 2, 3, 4, 5, 6];
-// myArray.length();
-// document.getElementById(`demo1`).innerHTML = myArray.length();
+// // myArray = [1, 2, 3, 4, 5, 6];
+// // myArray.length();
+// // document.getElementById(`demo1`).innerHTML = myArray.length();
 
-// const factorial = function fac(n) {
-//     return n < 2 ? 1 : n * fac(n - 1);
-//   };
+// // const factorial = function fac(n) {
+// //     return n < 2 ? 1 : n * fac(n - 1);
+// //   };
 
-//   console.log()
+// //   console.log()
 
-// let firstName = `Antonia`;
-// let lastName = `Francesca`;
+// // let firstName = `Antonia`;
+// // let lastName = `Francesca`;
 
-// let fullName = function (first, last) {
-//     return `${first} ${last}`;
+// // let fullName = function (first, last) {
+// //     return `${first} ${last}`;
+// // }
+
+// // (firstName, lastName) => `${firstName} ${lastName}`;
+
+
+// // document.getElementById(`fullName`).innerHTML = fullName(firstName, lastName);
+
+// // const array = [15, 16, 17, 18, 19];
+
+// // function reducer(accumulator, currentValue, index) {
+// //   const returns = accumulator + currentValue;
+// //   console.log(
+// //     `accumulator: ${accumulator}, currentValue: ${currentValue}, index: ${index}, returns: ${returns}`,
+// //   );
+// //   return returns;
+// // }
+
+// // array.reduce(reducer);
+
+// // let names = [`Nancey`, `Blessing`, `Jorge`, `Svetlana`, `Bob`]
+
+// // let namesB = names.filter(name => name.charAt(0) === `B`);
+// // let namesLength = names.map(name => name.length);
+// // console.log(namesLength);
+// // let namesReduce = names.reduce((total, names) => total + names.length, 0) / names.length;
+// // console.log(namesReduce)
+
+// // const buttonElement = document.getElementById("submitButton");
+
+// // // modify the copyInput callback to receive the event object
+// // function copyInput(event) {
+// //     // take a look at the event!
+// //     console.log(event);
+// //     const inputElement = document.getElementById("inputBox");
+// //     const outputElement = document.getElementById("output");
+// //     outputElement.innerHTML = inputElement.value;
+// //   }
+
+// // buttonElement.addEventListener("click", copyInput);
+
+// const log = document.querySelector("#log");
+
+// document.addEventListener("keydown", logKey);
+
+// function logKey(e) {
+//   // how do we know which key was pressed?
+//   console.log(e);
+//   // checkout e.code, e.key, and e.keyCode
+//   // what is the difference?
 // }
 
-// (firstName, lastName) => `${firstName} ${lastName}`;
+// let scores = [56, 78, 95, 77, 65, 86];
+// let target = scores.indexOf(87);
+// console.log(target)
+
+// const nums = [1,20,10,22,30,44,100,11,411];
 
 
-// document.getElementById(`fullName`).innerHTML = fullName(firstName, lastName);
-
-// const array = [15, 16, 17, 18, 19];
-
-// function reducer(accumulator, currentValue, index) {
-//   const returns = accumulator + currentValue;
-//   console.log(
-//     `accumulator: ${accumulator}, currentValue: ${currentValue}, index: ${index}, returns: ${returns}`,
-//   );
-//   return returns;
+// function num(a,b) {
+//     return a - b;
 // }
+// nums.sort(num);
 
-// array.reduce(reducer);
+// nums.sort((a, b) => a - b);
 
-// let names = [`Nancey`, `Blessing`, `Jorge`, `Svetlana`, `Bob`]
 
-// let namesB = names.filter(name => name.charAt(0) === `B`);
-// let namesLength = names.map(name => name.length);
-// console.log(namesLength);
-// let namesReduce = names.reduce((total, names) => total + names.length, 0) / names.length;
-// console.log(namesReduce)
+// document.querySelector(`#demo10`).innerHTML = nums;
 
-// const buttonElement = document.getElementById("submitButton");
-
-// // modify the copyInput callback to receive the event object
-// function copyInput(event) {
-//     // take a look at the event!
-//     console.log(event);
-//     const inputElement = document.getElementById("inputBox");
-//     const outputElement = document.getElementById("output");
-//     outputElement.innerHTML = inputElement.value;
+// function calculate(a, b, callback) {
+//     callback(a + b);
+//   }
+  
+//   function displayResult(result) {
+//     console.log('The result is: ' + result);
 //   }
 
-// buttonElement.addEventListener("click", copyInput);
+// console.log(calculate(2, 3, displayResult));
 
-const log = document.querySelector("#log");
-
-document.addEventListener("keydown", logKey);
-
-function logKey(e) {
-  // how do we know which key was pressed?
-  console.log(e);
-  // checkout e.code, e.key, and e.keyCode
-  // what is the difference?
-}
-
-let scores = [56, 78, 95, 77, 65, 86];
-let target = scores.indexOf(87);
-console.log(target)
+const cat = {
+    name : 'Bertie',
+    breed : 'Cymric',
+    color : 'white',
+    greeting: function() {
+      console.log('Hello said ${this.name} the ${this.breed}');
+    }
+  }
+  
+  const cat2 = {
+    name : 'Grindlewalde',
+    breed : 'Calico',
+    color : 'striped',
+    greeting: function() {
+      console.log('Hello said ${this.name} the ${this.breed}');
+    }
+  }
