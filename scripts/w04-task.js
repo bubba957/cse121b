@@ -79,7 +79,6 @@ myProfile.hobbies.forEach(hobbie => {
 myProfile.placesLived.forEach(loc => {
     let dt = document.createElement(`dt`);
     dt.textContent = loc.place;
-    // placesDOM.appendChild(dt);
     document.querySelector(`#places-lived`).appendChild(dt);
 
     let dd = document.createElement(`dd`);
