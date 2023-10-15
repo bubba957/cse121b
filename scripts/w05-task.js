@@ -3,7 +3,7 @@
 /* Declare and initialize global variables */
 
 const templesElement = document.querySelector(`#temples`);
-const templeList = null;
+const templeList = `https://byui-cse.github.io/cse121b-ww-course/resources/temples.json`;
 
 /* async displayTemples Function */
 
@@ -43,35 +43,27 @@ const reset = () => {
 
 /* sortBy Function */
 
-const sortBy = (temples) => {
+const sortBy = (templeList) => {
     reset();
     const filter = document.querySelector(`#sortBy`).value;
     switch (filter) {
         case `utah`:
-            displayTemples(temples.filter((temple) => temple.location.includes("Utah")));
-            // displayTemples(isUtah);
+            displayTemples(templeList.filter((utah) => utah.location.includes("Utah")));
             break;
         
-        // case `notUtah`:
-        //     const notUtah = temples.filter((temple) =>
-        //         temple.location.toLowerCase().selectedFields.includes(`utah`)
-        //     );
-        //     displayTemples(notUtah)
-        //     break;
+        case `notUtah`:
+            displayTemples(templeList.filter((notUtah) => notUtah.location.selectedFields.includes("Utah")));
+            break;
 
-        // case `older`:
-        //     const before1950 = temples.filter((temple) =>
-        //         temple.dedicated.toLowerCase().includes(new Date(1950, 0, 1))
-        //     );
-        //     displayTemples(before1950)
-        //     break;
+        case `older`:
+            displayTemples(templeList.filter((older) => older.dedicated.includes(new Date(1950, 0, 1))));
+            break;
 
-        // case `all`:
-        //     displayTemples(temples);
-        //     break;
+        case `all`:
+            displayTemples(templeList);
+            break;
 
         default:
-            // displayTemples(temples)
             break;
     }
 }
