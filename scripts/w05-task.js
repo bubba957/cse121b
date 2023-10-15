@@ -3,7 +3,7 @@
 /* Declare and initialize global variables */
 
 const templesElement = document.querySelector(`#temples`);
-const templeList = `https://byui-cse.github.io/cse121b-ww-course/resources/temples.json`;
+const templeList = null;
 
 /* async displayTemples Function */
 
