@@ -3,7 +3,7 @@
 /* Declare and initialize global variables */
 
 const templesElement = document.querySelector(`#temples`);
-const templeList = null;
+let templeList = null;
 
 /* async displayTemples Function */
 
@@ -29,7 +29,7 @@ const displayTemples = temples => {
 let getTemples = async () => {
     const response = await fetch(`https://byui-cse.github.io/cse121b-ww-course/resources/temples.json`);
     if (response.ok) {
-        const templeList = await response.json();
+        templeList = await response.json();
         console.log(templeList);
         displayTemples(templeList);
     }
@@ -51,12 +51,12 @@ const sortBy = (templeList) => {
             displayTemples(templeList.filter((utah) => utah.location.includes("Utah")));
             break;
         
-        case `notUtah`:
-            displayTemples(templeList.filter((notUtah) => notUtah.location.selectedFields.includes("Utah")));
+        case `notutah`:
+            displayTemples(templeList.filter((notUtah) => !notUtah.location.includes("Utah")));
             break;
 
         case `older`:
-            displayTemples(templeList.filter((older) => older.dedicated.includes(new Date(1950, 0, 1))));
+            displayTemples(templeList.filter((older) => new Date(older.dedicated) < new Date(1950, 0, 1)));
             break;
 
         case `all`:
