@@ -18,9 +18,10 @@ const displayTemples = temples => {
         imgElement.setAttribute(`src`, temple.imageUrl);
         imgElement.setAttribute(`alt`, `Located at ${temple.location}`);
         
-        articleElement.appendChild(h3Element);
-        articleElement.appendChild(imgElement);
-        templesElement.appendChild(articleElement);
+        // articleElement.appendChild(h3Element);
+        // articleElement.appendChild(imgElement);
+        templesElement.appendChild(h3Element);
+        templesElement.appendChild(imgElement);
     });
 }
 
@@ -43,20 +44,20 @@ const reset = () => {
 
 /* sortBy Function */
 
-const sortBy = (templeList) => {
+const sortBy = (temples) => {
     reset();
     const filter = document.querySelector(`#sortBy`).value;
     switch (filter) {
         case `utah`:
-            displayTemples(templeList.filter((utah) => utah.location.includes("Utah")));
+            displayTemples(temples.filter((utah) => utah.location.includes("Utah")));
             break;
         
         case `notutah`:
-            displayTemples(templeList.filter((notUtah) => !notUtah.location.includes("Utah")));
+            displayTemples(temples.filter((notUtah) => !notUtah.location.includes("Utah")));
             break;
 
         case `older`:
-            displayTemples(templeList.filter((older) => new Date(older.dedicated) < new Date(1950, 0, 1)));
+            displayTemples(temples.filter((older) => new Date(older.dedicated) < new Date(1950, 0, 1)));
             break;
 
         case `all`:

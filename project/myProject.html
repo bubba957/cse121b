@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Icaramba Restaurant</title>
 </head>
 <body>
+    <h1>Icaramba Restaurant</h1>
+    <h3>Which one did you get?</h3>
+    <!-- <input type="radio" id="meat">Seared Steak</input>
+    <br><br>
+    <input type="radio" id="seafood">Fresh Lobster</input>
+    <br><br>
+    <input type="radio" id="grains">A Nice Bowl of Cereal</input>
+    <br><br>
+    <input type="radio" id="veg">An Endless Salad Option</input>
+    <br><br> -->
+    <select id="sortBy" title="Choose a data filter.">
+        <option value="" disabled selected>Meals</option>
+        <option value="meat">Seared Steak</option>
+        <option value="seafood">Fresh Lobster</option>
+        <option value="grains">A Nice Bowl of Cereal</option>
+        <option value="veg">An Endless Salad Option</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+
+      <div id="ordered"></div>
     <script type="modules" src="es2.js"></script>
     <script src="scripts/myProject.js"></script>
 </body>
