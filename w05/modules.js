@@ -56,7 +56,7 @@ import aCourse from "./course.js";
 //     document.querySelector("#sections").innerHTML = html.join("");
 //   }
   
-  aCourse.init()
+  aCourse.init();
   document.querySelector("#enrollStudent").addEventListener("click", function () {
     const sectionNum = document.querySelector("#sectionNumber").value;
     aCourse.changeEnrollment(sectionNum);

@@ -61,7 +61,7 @@ const sortBy = (temples) => {
             break;
 
         case `all`:
-            displayTemples(templeList);
+            displayTemples(temples);
             break;
 
         default:
